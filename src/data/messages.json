@@ -1,0 +1,86 @@
+[
+  {
+    "id": "m001",
+    "senderId": "u001",
+    "receiverId": "u007",
+    "message": "Hi, is the apartment in Yaba still available?",
+    "timestamp": "2026-08-16T14:30:00Z"
+  },
+  {
+    "id": "m002",
+    "senderId": "u007",
+    "receiverId": "u001",
+    "message": "Yes, it is currently available. Would you like to schedule a viewing?",
+    "timestamp": "2026-08-16T14:34:00Z"
+  },
+  {
+    "id": "m003",
+    "senderId": "u001",
+    "receiverId": "u007",
+    "message": "Yes please. Is Saturday afternoon possible?",
+    "timestamp": "2026-08-16T14:38:00Z"
+  },
+  {
+    "id": "m004",
+    "senderId": "u007",
+    "receiverId": "u001",
+    "message": "Saturday at 2pm works for me.",
+    "timestamp": "2026-08-16T14:42:00Z"
+  },
+  {
+    "id": "m005",
+    "senderId": "u002",
+    "receiverId": "u008",
+    "message": "Hello, I am interested in the Wuse apartment.",
+    "timestamp": "2026-08-15T09:20:00Z"
+  },
+  {
+    "id": "m006",
+    "senderId": "u008",
+    "receiverId": "u002",
+    "message": "Hi Amara. It is available and the apartment is furnished.",
+    "timestamp": "2026-08-15T09:27:00Z"
+  },
+  {
+    "id": "m007",
+    "senderId": "u002",
+    "receiverId": "u008",
+    "message": "Great. Does the rent include service charges?",
+    "timestamp": "2026-08-15T09:31:00Z"
+  },
+  {
+    "id": "m008",
+    "senderId": "u008",
+    "receiverId": "u002",
+    "message": "Service charges are separate, but I can send you the breakdown.",
+    "timestamp": "2026-08-15T09:36:00Z"
+  },
+  {
+    "id": "m009",
+    "senderId": "u003",
+    "receiverId": "u007",
+    "message": "Is the Gwarinpa room suitable for a single tenant?",
+    "timestamp": "2026-08-14T17:10:00Z"
+  },
+  {
+    "id": "m010",
+    "senderId": "u007",
+    "receiverId": "u003",
+    "message": "Yes, it is best suited for one person.",
+    "timestamp": "2026-08-14T17:18:00Z"
+  },
+  {
+    "id": "m011",
+    "senderId": "u003",
+    "receiverId": "u007",
+    "message": "Thanks. I would like to know if there is parking.",
+    "timestamp": "2026-08-14T17:23:00Z"
+  },
+  {
+    "id": "m012",
+    "senderId": "u007",
+    "receiverId": "u003",
+    "message": "There is limited parking inside the compound.",
+    "timestamp": "2026-08-14T17:29:00Z"
+  }
+]

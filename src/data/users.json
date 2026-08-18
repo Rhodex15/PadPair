@@ -1,0 +1,58 @@
+[
+  {
+    "id": "u001",
+    "name": "David Okafor",
+    "email": "david.okafor@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "id": "u002",
+    "name": "Amara Eze",
+    "email": "amara.eze@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    "id": "u003",
+    "name": "Tunde Adebayo",
+    "email": "tunde.adebayo@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=11"
+  },
+  {
+    "id": "u004",
+    "name": "Zainab Bello",
+    "email": "zainab.bello@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=32"
+  },
+  {
+    "id": "u005",
+    "name": "Chinedu Obi",
+    "email": "chinedu.obi@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=13"
+  },
+  {
+    "id": "u006",
+    "name": "Mariam Yusuf",
+    "email": "mariam.yusuf@example.com",
+    "role": "tenant",
+    "avatar": "https://i.pravatar.cc/150?img=44"
+  },
+  {
+    "id": "u007",
+    "name": "Ifeanyi Nwosu",
+    "email": "ifeanyi.nwosu@example.com",
+    "role": "landlord",
+    "avatar": "https://i.pravatar.cc/150?img=68"
+  },
+  {
+    "id": "u008",
+    "name": "Grace Adeyemi",
+    "email": "grace.adeyemi@example.com",
+    "role": "landlord",
+    "avatar": "https://i.pravatar.cc/150?img=49"
+  }
+]

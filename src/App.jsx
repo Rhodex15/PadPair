@@ -5,6 +5,7 @@ import RoommateBrowse from "./pages/RoommateBrowse";
 import Profile from "./pages/Profile";
 import Chat from "./pages/Chat";
 import { Route, Routes } from "react-router";
+import Container from "./components/Container";
 
 function App() {
   return (

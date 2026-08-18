@@ -1,0 +1,194 @@
+[
+  {
+    "id": "l001",
+    "userId": "u007",
+    "title": "Bright Self-Contained Apartment in Yaba",
+    "description": "A clean, well-lit apartment close to transport links, shops and everyday amenities. Suitable for a young professional or student.",
+    "price": 280000,
+    "location": "Yaba",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "self-contained",
+    "isFlagged": false,
+    "createdAt": "2026-08-17T10:30:00Z"
+  },
+  {
+    "id": "l002",
+    "userId": "u007",
+    "title": "Quiet Single Room in Surulere",
+    "description": "A simple and peaceful room in a residential area with easy access to major roads and public transport.",
+    "price": 350000,
+    "location": "Surulere",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "single-room",
+    "isFlagged": false,
+    "createdAt": "2026-08-16T10:30:00Z"
+  },
+  {
+    "id": "l003",
+    "userId": "u008",
+    "title": "Modern 1-Bedroom Apartment in Ikeja",
+    "description": "A modern apartment with a fitted kitchen, good natural light and reliable water supply in a convenient Ikeja location.",
+    "price": 450000,
+    "location": "Ikeja",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "1-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-15T10:30:00Z"
+  },
+  {
+    "id": "l004",
+    "userId": "u008",
+    "title": "Furnished 2-Bedroom Flat in Lekki",
+    "description": "A spacious furnished apartment in a secure compound with parking and nearby restaurants, supermarkets and transport.",
+    "price": 550000,
+    "location": "Lekki",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "2-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-14T10:30:00Z"
+  },
+  {
+    "id": "l005",
+    "userId": "u007",
+    "title": "Affordable Room in Gwarinpa",
+    "description": "An affordable room in a quiet compound with accessible public transport and nearby convenience stores.",
+    "price": 650000,
+    "location": "Gwarinpa",
+    "city": "Abuja",
+    "images": [
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "single-room",
+    "isFlagged": false,
+    "createdAt": "2026-08-13T10:30:00Z"
+  },
+  {
+    "id": "l006",
+    "userId": "u008",
+    "title": "Spacious 1-Bedroom in Wuse",
+    "description": "A spacious apartment in a central Abuja neighborhood with good road access and a practical layout.",
+    "price": 800000,
+    "location": "Wuse",
+    "city": "Abuja",
+    "images": [
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "1-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-12T10:30:00Z"
+  },
+  {
+    "id": "l007",
+    "userId": "u007",
+    "title": "Secure Self-Contained in Rumuola",
+    "description": "A comfortable self-contained apartment in a residential area with nearby shops and straightforward access to the city.",
+    "price": 950000,
+    "location": "Rumuola",
+    "city": "Port Harcourt",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "self-contained",
+    "isFlagged": false,
+    "createdAt": "2026-08-11T10:30:00Z"
+  },
+  {
+    "id": "l008",
+    "userId": "u008",
+    "title": "Modern 2-Bedroom Flat in Eliozu",
+    "description": "A modern apartment with generous living space, parking and convenient access to major roads.",
+    "price": 1200000,
+    "location": "Eliozu",
+    "city": "Port Harcourt",
+    "images": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "2-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-10T10:30:00Z"
+  },
+  {
+    "id": "l009",
+    "userId": "u007",
+    "title": "Budget-Friendly Room in Yaba",
+    "description": "A budget-conscious option for someone who wants a simple room in a lively and connected neighborhood.",
+    "price": 120000,
+    "location": "Yaba",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "single-room",
+    "isFlagged": true,
+    "createdAt": "2026-08-09T10:30:00Z"
+  },
+  {
+    "id": "l010",
+    "userId": "u008",
+    "title": "Renovated 1-Bedroom in Ikeja",
+    "description": "A recently renovated apartment with a clean interior, good ventilation and easy access to Ikeja amenities.",
+    "price": 500000,
+    "location": "Ikeja",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "1-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-08T10:30:00Z"
+  },
+  {
+    "id": "l011",
+    "userId": "u008",
+    "title": "Executive Apartment in Lekki",
+    "description": "A polished apartment in a popular residential area with modern fittings and strong access to shops and restaurants.",
+    "price": 700000,
+    "location": "Lekki",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "1-bedroom",
+    "isFlagged": false,
+    "createdAt": "2026-08-07T10:30:00Z"
+  },
+  {
+    "id": "l012",
+    "userId": "u007",
+    "title": "Cozy Single Room in Surulere",
+    "description": "A compact, comfortable room in a calm residential area with good transport options.",
+    "price": 380000,
+    "location": "Surulere",
+    "city": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "roomType": "single-room",
+    "isFlagged": false,
+    "createdAt": "2026-08-06T10:30:00Z"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "userId": "u001",
+    "cleanlinessLevel": 5,
+    "sleepSchedule": 2,
+    "socialLevel": 4,
+    "location": "Yaba",
+    "interestedListings": ["l001"]
+  },
+  {
+    "userId": "u002",
+    "cleanlinessLevel": 3,
+    "sleepSchedule": 4,
+    "socialLevel": 2,
+    "location": "Wuse",
+    "interestedListings": ["l006"]
+  },
+  {
+    "userId": "u003",
+    "cleanlinessLevel": 4,
+    "sleepSchedule": 3,
+    "socialLevel": 5,
+    "location": "Gwarinpa",
+    "interestedListings": ["l005"]
+  },
+  {
+    "userId": "u004",
+    "cleanlinessLevel": 2,
+    "sleepSchedule": 1,
+    "socialLevel": 3,
+    "location": "Lekki",
+    "interestedListings": ["l004"]
+  },
+  {
+    "userId": "u005",
+    "cleanlinessLevel": 4,
+    "sleepSchedule": 2,
+    "socialLevel": 2,
+    "location": "Lekki",
+    "interestedListings": []
+  },
+  {
+    "userId": "u006",
+    "cleanlinessLevel": 3,
+    "sleepSchedule": 5,
+    "socialLevel": 4,
+    "location": "Yaba",
+    "interestedListings": ["l001"]
+  }
+]
