@@ -6,10 +6,12 @@ import Profile from "./pages/Profile";
 import Chat from "./pages/Chat";
 import { Route, Routes } from "react-router";
 import Container from "./components/Container";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
+      <NavBar/>
       <Routes>
         <Route path="/" element = {<Home/>}/>
         <Route path="/listing/:id" element = {<ListingDetails/>}/>
