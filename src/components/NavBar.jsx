@@ -1,13 +1,11 @@
 import { Link } from "react-router";
 import Container from "./Container";
+import { AppContext } from "../store/AppContext";
+import { useContext } from "react";
 
 export default function NavBar(){
-    const currentUser = {
-        name: "David Okafor", 
-        avatar: "some-url", 
-        id: "u001"
-    };
 
+    const { currentUser } = useContext(AppContext);
     return(
         <Container>
             <div  className="flex items-center justify-between py-4">

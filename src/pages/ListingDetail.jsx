@@ -1,4 +1,4 @@
 function ListingDetails() {
-  return <div>ListingDetails Page</div>;
+  return ;
 }
 export default ListingDetails;

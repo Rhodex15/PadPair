@@ -1,22 +1,25 @@
 import Container from "../components/Container";
-import listings from "../data/listings.json";
 import ListingCard from "../components/ListingCard";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import {AppContext} from "../store/AppContext";
+
+
 
 function Home() {
+  const {listing, addListing, currentUser} = useContext(AppContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedRoomType, setSelectedRoomType] = useState("");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
 
-  const filteredListings = listings.filter((listing) => {
-    const matchesSearch = listing.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesLocation = selectedLocation === "" || listing.location === selectedLocation;
-    const matchesRoomType = selectedRoomType === "" || listing.roomType === selectedRoomType;
+  const filteredListings = listing.filter((s) => {
+    const matchesSearch = s.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesLocation = selectedLocation === "" || s.location === selectedLocation;
+    const matchesRoomType = selectedRoomType === "" || s.roomType === selectedRoomType;
     const matchesPrice =
-      (minPrice === "" || listing.price >= parseFloat(minPrice)) &&
-      (maxPrice === "" || listing.price <= parseFloat(maxPrice));
+      (minPrice === "" || s.price >= parseFloat(minPrice)) &&
+      (maxPrice === "" || s.price <= parseFloat(maxPrice));
 
     return matchesSearch && matchesLocation && matchesRoomType && matchesPrice;
   });
