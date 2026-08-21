@@ -1,12 +1,12 @@
 import Container from "../components/Container";
 import ListingCard from "../components/ListingCard";
 import { useState, useContext } from "react";
-import {AppContext} from "../store/AppContext";
+import { AppContext } from "../store/AppContext";
 
 
 
 function Home() {
-  const {listing, addListing, currentUser} = useContext(AppContext);
+  const { listing, addListing, currentUser } = useContext(AppContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedRoomType, setSelectedRoomType] = useState("");
@@ -92,6 +92,7 @@ function Home() {
         {filteredListings.map((listing) => (
           <ListingCard
             key={listing.id}
+            id={listing.id}
             image={listing.images[0]}
             price={listing.price}
             title={listing.title}
@@ -105,7 +106,7 @@ function Home() {
         <p className="text-center text-muted py-12">
           No listings match your search. Try adjusting your filters.
         </p>
-)}
+      )}
     </Container>
   );
 }
