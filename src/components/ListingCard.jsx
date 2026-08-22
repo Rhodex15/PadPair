@@ -5,7 +5,11 @@ import { AppContext } from "../store/AppContext";
 import { Link } from "react-router";
 
 function ListingCard({ image, price, title, location, roomType, isFlagged, id }) {
-  const [isInterested, setIsInterested] = useState(false);
+
+  const { toggleInterest, currentUser, profiles } = useContext(AppContext);
+
+  const currentUserProfile = profiles.find((p) => p.userId === currentUser.id);
+  const isInterested = currentUserProfile.interestedListings.includes(id);
 
   return (
     <div className="bg-card border border-border rounded-lg shadow-sm overflow-hidden">
@@ -28,7 +32,7 @@ function ListingCard({ image, price, title, location, roomType, isFlagged, id })
 
       <div className="p-4 pt-3">
         <button
-          onClick={() => setIsInterested(!isInterested)}
+          onClick={() => toggleInterest(id)}
           className={`w-full py-2 rounded-lg font-semibold text-sm ${
             isInterested
               ? "bg-primary text-white"
