@@ -8,8 +8,12 @@ function ListingCard({ image, price, title, location, roomType, isFlagged, id })
 
   const { toggleInterest, currentUser, profiles } = useContext(AppContext);
 
-  const currentUserProfile = profiles.find((p) => p.userId === currentUser.id);
-  const isInterested = currentUserProfile.interestedListings.includes(id);
+  const currentUserProfile = currentUser
+    ? profiles.find((p) => p.userId === currentUser.id)
+    : null;
+  const isInterested = currentUserProfile
+    ? currentUserProfile.interestedListings.includes(id)
+    : false;
 
   return (
     <div className="bg-card border border-border rounded-lg shadow-sm overflow-hidden">
@@ -32,12 +36,11 @@ function ListingCard({ image, price, title, location, roomType, isFlagged, id })
 
       <div className="p-4 pt-3">
         <button
-          onClick={() => toggleInterest(id)}
-          className={`w-full py-2 rounded-lg font-semibold text-sm ${
-            isInterested
+          onClick={() => (currentUser ? toggleInterest(id) : navigate("/login"))}
+          className={`w-full py-2 rounded-lg font-semibold text-sm ${isInterested
               ? "bg-primary text-white"
               : "bg-white text-primary border border-primary"
-          }`}
+            }`}
         >
           {isInterested ? "Interested ✓" : "Interested?"}
         </button>

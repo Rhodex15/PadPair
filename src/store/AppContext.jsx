@@ -1,17 +1,39 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { createContext } from "react";
 import listings from "../data/listings.json";
 import compatibilityProfiles from "../data/compatibilityProfiles.json";
+import messages from "../data/messages.json";
 
 export const AppContext = createContext();
 
 export default function AppProvider({ children }) {
 
-    const [currentUser, setCurrentUser] = useState({
-        name: "David Okafor",
-        avatar: "https://raw.githubusercontent.com/meituan-longcat/LongCat-Video/main/assets/avatar/single/man.png",
-        id: "u001"
+    const [allMessages, setAllMessages] = useState(messages);
+
+    function sendMessage(receiverId, text) {
+        const newMessage = {
+            id: `m${Date.now()}`,
+            senderId: currentUser.id,
+            receiverId,
+            message: text,
+            timestamp: new Date().toISOString(),
+        };
+        setAllMessages([...allMessages, newMessage]);
+    }
+
+
+    const [currentUser, setCurrentUser] = useState(() => {
+        const saved = localStorage.getItem("currentUser");
+        return saved ? JSON.parse(saved) : null;
     });
+
+    useEffect(() => {
+        if (currentUser) {
+            localStorage.setItem("currentUser", JSON.stringify(currentUser));
+        } else {
+            localStorage.removeItem("currentUser");
+        }
+    }, [currentUser]);
 
     const [profiles, setProfiles] = useState(compatibilityProfiles);
     const [listing, setListing] = useState(listings);
@@ -22,7 +44,6 @@ export default function AppProvider({ children }) {
                 if (profile.userId !== currentUser.id) return profile;
 
                 const alreadyInterested = profile.interestedListings.includes(listingId);
-
                 const updatedInterests = alreadyInterested
                     ? profile.interestedListings.filter((id) => id !== listingId)
                     : [...profile.interestedListings, listingId];
@@ -30,14 +51,34 @@ export default function AppProvider({ children }) {
                 return { ...profile, interestedListings: updatedInterests };
             })
         );
-    };
-    
+    }
+
     function addListing(newListing) {
         setListing([...listing, newListing]);
     }
 
+    function login(user) {
+        setCurrentUser(user);
+    }
+
+    function logout() {
+        setCurrentUser(null);
+    }
+
     return (
-        <AppContext.Provider value={{ listing, addListing, currentUser, toggleInterest, profiles }}>
+        <AppContext.Provider
+            value={{
+                listing,
+                addListing,
+                currentUser,
+                profiles,
+                toggleInterest,
+                login,
+                logout,
+                sendMessage,
+                allMessages,
+            }}
+        >
             {children}
         </AppContext.Provider>
     );
