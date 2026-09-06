@@ -12,9 +12,8 @@ export default function NavBar() {
         <Link to="/" className="text-xl font-bold text-primary">PadPair</Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link to="/">Listings</Link>
+          <Link to="/browse">Listings</Link>
           <Link to="/roommates">Roommates</Link>
-          <Link to="/chat">Chat</Link>
           {currentUser ? (
             <>
               <Link to={`/profile/${currentUser.id}`}>

@@ -5,25 +5,28 @@ import RoommateBrowse from "./pages/RoommateBrowse";
 import Profile from "./pages/Profile";
 import Chat from "./pages/Chat";
 import { Route, Routes } from "react-router";
-import Container from "./components/Container";
-import NavBar from "./components/NavBar";
+
 import Login from "./pages/Login";
+import Landing from "./pages/Landing";
+import MainLayout from "./pages/MainLayout";
 
 function App() {
   return (
     <>
-      <NavBar/>
       <Routes>
-        <Route path="/" element = {<Home/>}/>
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/listing/:id" element = {<ListingDetails/>}/>
-        <Route path="/create-listing" element = {<CreateListing/>}/>
-        <Route path="/roommates" element = {<RoommateBrowse/>}/>
-        <Route path="/profile/:id" element = {<Profile/>}/>
-        <Route path="/chat" element = {<Chat/>}/>
+        <Route element={<MainLayout />}>
+          <Route path="/browse" element = {<Home/>}/>
+          <Route path="/listing/:id" element = {<ListingDetails/>}/>
+          <Route path="/create-listing" element = {<CreateListing/>}/>
+          <Route path="/roommates" element = {<RoommateBrowse/>}/>
+          <Route path="/profile/:id" element = {<Profile/>}/>
+          <Route path="/chat" element = {<Chat/>}/>
+        </Route>
       </Routes>
     </>
   )
 }
 
-export default App
+export default App;

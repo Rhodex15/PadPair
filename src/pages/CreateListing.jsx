@@ -36,7 +36,7 @@ function CreateListing() {
     };
     addListing(newListing);
     setFormData({ title: "", description: "", price: "", location: "", roomType: "" });
-    navigate("/");
+    navigate("/browse");
   }
 
   const inputClass = "w-full px-4 py-2 border border-border rounded-lg";

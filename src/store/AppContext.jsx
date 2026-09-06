@@ -21,7 +21,6 @@ export default function AppProvider({ children }) {
         setAllMessages([...allMessages, newMessage]);
     }
 
-
     const [currentUser, setCurrentUser] = useState(() => {
         const saved = localStorage.getItem("currentUser");
         return saved ? JSON.parse(saved) : null;
@@ -35,7 +34,15 @@ export default function AppProvider({ children }) {
         }
     }, [currentUser]);
 
-    const [profiles, setProfiles] = useState(compatibilityProfiles);
+    const [profiles, setProfiles] = useState(() => {
+        const saved = localStorage.getItem("padpair_profiles");
+        return saved ? JSON.parse(saved) : compatibilityProfiles;
+    });
+
+    useEffect(() => {
+        localStorage.setItem("padpair_profiles", JSON.stringify(profiles));
+    }, [profiles]);
+
     const [listing, setListing] = useState(listings);
 
     function toggleInterest(listingId) {
@@ -51,6 +58,10 @@ export default function AppProvider({ children }) {
                 return { ...profile, interestedListings: updatedInterests };
             })
         );
+    }
+
+    function addProfile(newProfile) {
+        setProfiles((prev) => [...prev, newProfile]);
     }
 
     function addListing(newListing) {
@@ -73,6 +84,7 @@ export default function AppProvider({ children }) {
                 currentUser,
                 profiles,
                 toggleInterest,
+                addProfile,
                 login,
                 logout,
                 sendMessage,
